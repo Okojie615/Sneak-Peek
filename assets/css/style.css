@@ -19,19 +19,19 @@ header {
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
-    background-image: url();
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
+}
+
+.strokeme {
+    color: black;
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 75px;
+    font-size: 40px;
     color: var(--primary-color);
     margin: 0;
+    
 }
 
 header a {
@@ -40,7 +40,7 @@ header a {
 }
 
 header nav {
-    margin: 7px 0;
+    margin: 10px 0;
 }
 header nav ul {
     display: flex;
@@ -51,9 +51,9 @@ header nav ul {
 }
     
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 20px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 1.5vw;
 }
 
 header nav ul li a:hover {
@@ -69,7 +69,6 @@ section {
 
 .hero {
     background-size: cover;
-    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -85,7 +84,53 @@ section {
     font-size: 40px;
 }
 
-.intro P {
+.hero-form {
+    border: 3px solid var(--secondary-color);
+    background-color: rgb(191, 224, 182);
+    padding: 20px;
+    color: var(--secondary-color);
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 250px;
+    right: 110px; 
+
+}
+
+label {
+    font-size: 10;
+    margin: 0 5px;
+}
+
+select {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 15px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.hero-form h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.hero-form button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.intro p {
     line-height: 1.7;
     color: var(--tertiary-color);
     width: 80%;
