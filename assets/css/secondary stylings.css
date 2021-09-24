@@ -11,7 +11,6 @@
 }
 
 header {
-   
     padding: 20px 35px;
     background-color: var(--tertiary-color);
     display: flex;
@@ -19,7 +18,6 @@ header {
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
     background-image: url();
     background-size: cover;
     background-attachment: fixed;
@@ -31,7 +29,7 @@ header h1 {
     font-weight: bold;
     font-size: 45px;
     color: var(--secondary-color);
-    margin: 0;
+    margin: 0 0 0 0;
 }
 
 header nav {
@@ -61,97 +59,9 @@ header nav ul li a:hover {
 }
 
 header img {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 }
-
-section {
-    padding: 60px;
-}
-
-.hero {
-    background-size: cover;
-    background-position: 80%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-}
-
-.hero img {
-    max-width: 100%;
-}
-
-.hero h2 {
-    font-size: 40px;
-}
-
-.intro P {
-    line-height: 1.7;
-    color: var(--tertiary-color);
-    width: 80%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
-}
-
-.intro h2 {
-    font-size: 48px;
-    border-bottom: 3px solid;
-    color: var(--secondary-color);
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-}
-
-.steps p {
-    line-height: 1.7;
-    color: var(--tertiary-color);
-    width: 80%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
-}
-
-.steps h2 {
-    font-size: 48px;
-    border-bottom: 3px solid;
-    color: var(--secondary-color);
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-}
-
-.contact p {
-    line-height: 1.7;
-    color: var(--tertiary-color);
-    width: 80%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 48px;
-    border-bottom: 3px solid;
-    color: var(--secondary-color);
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-}
-
-
-
-
-
-
-
-
-
 
 footer {
     background: var(--primary-color);
