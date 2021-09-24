@@ -71,9 +71,6 @@ header nav ul li a:hover {
     background-attachment: fixed;
 }
 
-.hero h2{
-
-}
 
 .hero img {
     max-width: 100%;
@@ -135,10 +132,6 @@ select {
     text-align: center;
 }
 
-.intro iframe {
-    width: 100%;
-}
-
 .intro h2 {
     font-size: 48px;
     border-bottom: 3px solid;
@@ -196,7 +189,7 @@ select {
 }
 
 .contact h2 {
-    padding-top: 50px;
+    padding-top: 20px;
     color: white;
 }
 
@@ -213,6 +206,7 @@ select {
 
 .contact-info iframe {
     height: 300px;
+    margin-left: 300px;
 }
 
 .contact-info div {
@@ -226,7 +220,7 @@ select {
 
 .contact-info p, 
 .contact-info address {
-    margin: 20px 0;
+    margin: 10px;
     line-height: 1.5;
     font-size: 20px;
     font-style: normal;
@@ -272,12 +266,6 @@ select {
 
 /*REACH OUT STYLES END */
 
-
-
-
-
-
-
 footer {
     background: var(--primary-color);
     display: flex;
@@ -296,6 +284,7 @@ footer h2 {
 footer div {
     line-height: 1.5;
     text-align: right;
+    padding-right: 15px;
 }
 
 footer a {
