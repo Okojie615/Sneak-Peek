@@ -29,19 +29,15 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 75px;
-    color: var(--primary-color);
+    font-size: 45px;
+    color: var(--secondary-color);
     margin: 0;
-}
-
-header a {
-    text-decoration: none;
-    color: var(--primary-color);
 }
 
 header nav {
     margin: 7px 0;
 }
+
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -52,8 +48,10 @@ header nav ul {
     
 header nav ul li a {
     padding: 10px 15px;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 1.55vw;
+    color: var(--secondary-color);
+    text-decoration-line: none;
 }
 
 header nav ul li a:hover {
@@ -62,6 +60,10 @@ header nav ul li a:hover {
     border-radius: 15px;
 }
 
+header img {
+    height: 150px;
+    width: 150px;
+}
 
 section {
     padding: 60px;
