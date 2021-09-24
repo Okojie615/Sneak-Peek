@@ -28,7 +28,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
     color: var(--primary-color);
     margin: 0;
     
@@ -62,11 +62,6 @@ header nav ul li a:hover {
     border-radius: 15px;
 }
 
-
-section {
-    padding: 60px;
-}
-
 .hero {
     background-size: cover;
     display: flex;
@@ -76,13 +71,14 @@ section {
     background-attachment: fixed;
 }
 
+.hero h2{
+
+}
+
 .hero img {
     max-width: 100%;
 }
 
-.hero h2 {
-    font-size: 40px;
-}
 
 .hero-form {
     border: 3px solid var(--secondary-color);
@@ -93,8 +89,8 @@ section {
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 250px;
-    right: 110px; 
+    top: 150px;
+    right: 50px; 
 
 }
 
@@ -137,6 +133,10 @@ select {
     margin: 0 auto;
     font-size: 20px;
     text-align: center;
+}
+
+.intro iframe {
+    width: 100%;
 }
 
 .intro h2 {
@@ -188,7 +188,89 @@ select {
 }
 
 
+/* REACH OUT STYLES START */
 
+
+.contact {
+    background: var(--secondary-color);
+}
+
+.contact h2 {
+    padding-top: 50px;
+    color: white;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
+.contact-info iframe {
+    height: 300px;
+}
+
+.contact-info div {
+    color: white;
+}
+
+.contact-info h3 {
+    color: white;
+    font-size: 32px;
+}
+
+.contact-info p, 
+.contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: white;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    color: var(--primary-color);
+    background: var(--tertiary-color);
+}
+
+.contact-info a {
+    color: white;
+}
+
+/*REACH OUT STYLES END */
 
 
 
@@ -208,6 +290,7 @@ footer h2 {
     color: var(--secondary-color);
     font-size: 25px;
     margin: 0;
+    padding: 10px;
 }
 
 footer div {
