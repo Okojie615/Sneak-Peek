@@ -11,7 +11,7 @@
 }
 
 header {
-    padding: 20px 35px;
+    padding: 30px 30px;
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
@@ -20,7 +20,6 @@ header {
     position: -webkit-sticky;
     background-image: url();
     background-size: cover;
-    background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
 }
@@ -30,6 +29,7 @@ header h1 {
     font-size: 45px;
     color: var(--secondary-color);
     margin: 0 0 0 0;
+    font-family:cursive;
 }
 
 header nav {
@@ -58,14 +58,15 @@ header nav ul li a:hover {
     border-radius: 15px;
 }
 
+header nav ul li a {
+    font-family: cursive;
+}
+
 header img {
     height: 100px;
     width: 100px;
 }
 
-.column {
-    
-}
 
 footer {
     background: var(--primary-color);
