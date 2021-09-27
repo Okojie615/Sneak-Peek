@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">    
+<link rel="stylesheet" href="./assets/css/secondary stylings.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <title>Try on a pair!</title>
+</head>
+<body>
+    <header>
+        <h1>Sneak Peek <img src="./assets/images/SneakPeekLogo.png" /></h1>
+        <nav>
+        <ul>
+            <li>
+            <a href="#home">Back to Sneak Peek's homepage</a>
+            </li>
+        </ul>
+        </nav>
+    </header>
+
+    <div>
+        <div class="row no-gutters">
+            <div class="col-sm-2" id="filter-column">
+                <h2>Filters</h2>
+                <br />
+                <h3>Color</h3>
+                    <ul>
+                        <li><input type="checkbox"> Black</li>
+                        <li><input type="checkbox"> Red</li>
+                        <li><input type="checkbox"> White</li>
+                        <li><input type="checkbox"> Blue</li>
+                        <li><input type="checkbox"> Green</li>
+                        <li><input type="checkbox"> Yellow</li>
+                        <li><input type="checkbox"> Purple</li>
+                        <li><input type="checkbox"> Pink</li>
+                        <li><input type="checkbox"> Gray</li>
+                    </ul>
+                <br />
+                <h3>Width</h3>
+                <ul>
+                    <li><input type="checkbox"> Narrow</li>
+                    <li><input type="checkbox"> AAA</li>
+                    <li><input type="checkbox"> AA</li>
+                    <li><input type="checkbox"> A</li>
+                    <li><input type="checkbox"> B</li>
+                    <li><input type="checkbox"> C</li>
+                    <li><input type="checkbox"> D</li>
+                    <li><input type="checkbox"> E</li>
+                    <li><input type="checkbox"> EE</li>
+                    <li><input type="checkbox"> EEE</li>
+                </ul>
+            </div>
+            <div class="col-sm-9" id="results-column">
+                <h2>Results</h2>
+                <section class="col-sm-7">
+                    <form id="user-search">
+                    
+                        <label for="brand">Brand:</label>
+                        <select name="brand" id="brand">
+                            <option id="brand-nike" value="nike">Nike</option>
+                            <option id="brand-adidas" value="adidas">Adidas</option>
+                            <option id="brand-new-balance" value="new-balance">New Balance</option>
+                            <option id="brand-reebok" value="reebok">Reebok</option>
+                        </select>
+                        
+                        <label for="size">Size:</label>
+                        <select name="size" id="size">
+                            <option id="size-5" value="5">5</option>
+                            <option id="size-6" value="6">6</option>
+                            <option id="size-7" value="7">7</option>
+                            <option id="size-8" value="8">8</option>
+                            <option id="size-9" value="9">9</option>
+                            <option id="size-10" value="10">10</option>
+                            <option id="size-11" value="11">11</option>
+                            <option id="size-12" value="12">12</option>
+                        </select>
+                        
+                        <label for="gender">Gender:</label>
+                        <select name="gender" id="gender">
+                            <option id="gender-male" value="male">Male</option>
+                            <option id="gender-female" value="female">Female</option>
+                            <option id="gender-unisex" value="uni-sex">Unisex</option>
+                        </select>
+                            
+                        <button type="button" class="btn" id="Submit">
+                            <a href="./listpage.html">Submit</a>
+                        </button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>Thank you for visiting Sneak Peak</h2>
+        <div>
+            <a href="./privacy-policy.html">Read Our Privacy Policy</a><br />
+            &copy; 2021 Sneak Peak, Inc.
+        </div>
+    </footer>
+</body>
+<script src="./assets/js/script.js"></script>
+</html>
