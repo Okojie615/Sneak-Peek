@@ -39,15 +39,17 @@
     <section class= "hero">
         <h2> </h2>
         <img src= "assets\css\images\hermes-rivera-w83s82yd3Fk-unsplash (1).jpg" />
+        
         <div class="hero-form">
             <h3>Start Styling!</h3>
 
-
             <!-- Add form element -->
+            <form action="/" method="GET">
             <form>
                     
                 <label for="brand">Brand:</label>
                 <select name="brand" id="brand">
+                    <option value="select-brand">Select Brand</option>
                     <option value="nike">Nike</option>
                     <option value="adidas">Adidas</option>
                     <option value="new-balance">New Balance</option>
@@ -56,6 +58,7 @@
                 
                 <label for="size">Size:</label>
                 <select name="size" id="size">
+                    <option value="select-size">Select Size</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
                     <option value="7">7</option>
@@ -67,7 +70,8 @@
                 </select>
                 
                 <label for="gender">Gender:</label>
-                <select name="gender" id="brand">
+                <select name="gender" id="gender">
+                    <option value="select-gender">Select Gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="uni-sex">Unisex</option>
@@ -77,6 +81,7 @@
                     Submit
                 </button>
             </form>
+        </form>
         </div>
     </section>
 
@@ -87,7 +92,7 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam asperiores, ipsa perspiciatis labore veritatis necessitatibus et facere incidunt ut doloremque facilis corrupti ipsam recusandae reiciendis, culpa reprehenderit omnis earum atque.
             </p>
     </section>
-    
+
     <!-- "about us" section -->
     <section id="about-us" class="intro">
         <h2> About Us </h2>
@@ -112,7 +117,7 @@
                 55 Main Street <br/>
                 Memphis, TN <br/>
                 38119 <br/>
-                P: 901.786.2839)<br/>
+                P: 901.786.2839<br/>
                 E: <a href="mailto:info@sneakpeek.io">info@sneakpeek.io</a>
             </address>
         </div>
@@ -139,7 +144,6 @@
             &copy; 2021 Sneak Peak, Inc.
         </div>
     </footer>
-
 
     <script src="./assets/css/js/script.js"></script>
 </body>
