@@ -1,7 +1,7 @@
 const SneaksAPI = require('sneaks-api');
 const sneaks = new SneaksAPI();
 
-//getProduct(keyword, limit, callback) takes in a keyword and limit and returns a product array 
+//getProducts(keyword, limit, callback) takes in a keyword and limit and returns a product array 
 sneaks.getProducts("Yeezy Cinder", 10, function(err, products){
     console.log(products)
 })
@@ -14,4 +14,4 @@ sneaks.getProductPrices("FY2903", function(err, product){
 //getMostPopular(limit, callback) takes in a limit and returns an array of the current popular products curated by StockX
 sneaks.getMostPopular(10, function(err, products){
     console.log(products)
-});
+})
