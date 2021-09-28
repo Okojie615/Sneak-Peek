@@ -12,31 +12,62 @@
 </head>
 <body>
     <header>
-        <h1>Sneak Peek</h1>
-        <img src="./assets/images/SneakPeekLogo.png" />
+        <h1>Sneak Peek <img src="./assets/images/SneakPeekLogo.png" /></h1>
         <nav>
         <ul>
             <li>
-            <a href="#home">Return to Home Page</a>
+            <a href="#home">Back to Sneak Peek's homepage</a>
             </li>
         </ul>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
+    <div>
+        <div class="row no-gutters">
+            <div class="col-sm-2" id="filter-column">
                 <h2>Filters</h2>
+                <br />
+                <h3>Color</h3>
+                    <ul>
+                        <li><input type="checkbox"> Black</li>
+                        <li><input type="checkbox"> Red</li>
+                        <li><input type="checkbox"> White</li>
+                        <li><input type="checkbox"> Blue</li>
+                        <li><input type="checkbox"> Green</li>
+                        <li><input type="checkbox"> Yellow</li>
+                        <li><input type="checkbox"> Purple</li>
+                        <li><input type="checkbox"> Pink</li>
+                        <li><input type="checkbox"> Gray</li>
+                    </ul>
+                <br />
+                <h3>Width</h3>
+                <ul>
+                    <li><input type="checkbox"> Narrow</li>
+                    <li><input type="checkbox"> AAA</li>
+                    <li><input type="checkbox"> AA</li>
+                    <li><input type="checkbox"> A</li>
+                    <li><input type="checkbox"> B</li>
+                    <li><input type="checkbox"> C</li>
+                    <li><input type="checkbox"> D</li>
+                    <li><input type="checkbox"> E</li>
+                    <li><input type="checkbox"> EE</li>
+                    <li><input type="checkbox"> EEE</li>
+                </ul>
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-9" id="results-column">
                 <h2>Results</h2>
             </div>
         </div>
     </div>
 
     <footer>
-
+        <h2>Thank you for visiting Sneak Peak</h2>
+        <div>
+            <a href="./privacy-policy.html">Read Our Privacy Policy</a><br />
+            &copy; 2021 Sneak Peak, Inc.
+        </div>
     </footer>
     <script src="./assets/script/sneaks.js"></script>
+    <script src="./node_modules/@postman/form-data/lib/browser.js"></script>
 </body>
 </html>

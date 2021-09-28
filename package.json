@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Okojie615/NEDJProject1#readme",
   "dependencies": {
+    "@sindresorhus/is": "^4.2.0",
     "sneaks-api": "^1.1.8",
     "stockx-api": "^1.1.0"
   }

@@ -7,11 +7,10 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 header {
-    padding: 30px 30px;
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
@@ -20,6 +19,7 @@ header {
     position: -webkit-sticky;
     background-image: url();
     background-size: cover;
+    background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
 }
@@ -29,11 +29,12 @@ header h1 {
     font-size: 45px;
     color: var(--secondary-color);
     margin: 0 0 0 0;
-    font-family:cursive;
+    padding: 15px 0 0 25px;
 }
 
 header nav {
-    margin: 7px 0;
+    padding: 22px 25px 0 0;
+    height: 45px;
 }
 
 header nav ul {
@@ -58,15 +59,39 @@ header nav ul li a:hover {
     border-radius: 15px;
 }
 
-header nav ul li a {
-    font-family: cursive;
+header h1 img {
+    height: 90px;
+    width: 90px;
 }
 
-header img {
-    height: 100px;
-    width: 100px;
+#filter-column {
+    text-align: center;
+    margin: 20px 20px 20px 50px;
+    padding: 20px 0 0 0;
+    height: 785px;
+    border: 2px solid var(--secondary-color);
 }
 
+#filter-column h2 {
+    text-decoration: underline;
+}
+
+div ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+#results-column {
+    text-align: center;
+    margin: 20px 10px 20px 35px;
+    padding: 20px 0 0 0;
+    height: 785px;
+    border: 2px solid var(--secondary-color);
+}
+
+#results-column h2 {
+    text-decoration: underline;
+}
 
 footer {
     background: var(--primary-color);
@@ -78,13 +103,15 @@ footer {
 
 footer h2 {
     color: var(--secondary-color);
-    font-size: 25px;
+    font-size: 20px;
+    padding: 10px;
     margin: 0;
 }
 
 footer div {
     line-height: 1.5;
     text-align: right;
+    padding: 5px 20px 0 0;
 }
 
 footer a {
