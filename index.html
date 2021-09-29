@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./assets/css/style.css"/> -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
     <title>Sneak Peek</title>
-    <script src="./assets/js/script.js"></script>
 </head>
 
 <body>
@@ -38,58 +37,54 @@
 
     <!-- hero/jumbotron -->
     <section class= "hero">
-        <h2> Way Cooler Stuff Coming Soon!</h2>
-        <!-- <img src= "assets\css\images\hermes-rivera-w83s82yd3Fk-unsplash (1).jpg" /> -->
+        <h2> </h2>
+        <div id="player"></div>
+       
+        <img src= "assets\images\hermes-rivera-w83s82yd3Fk-unsplash (1).jpg" />
+        
         <div class="hero-form">
             <h3>Start Styling!</h3>
 
-
             <!-- Add form element -->
-            <form id="user-search">
+            <form action="/" method="GET">
+            <form>
                     
                 <label for="brand">Brand:</label>
                 <select name="brand" id="brand">
-                    <option id="brand-nike" value="nike">Nike</option>
-                    <option id="brand-adidas" value="adidas">Adidas</option>
-                    <option id="brand-new-balance" value="new-balance">New Balance</option>
-                    <option id="brand-reebok" value="reebok">Reebok</option>
+                    <option value="select-brand">Select Brand</option>
+                    <option value="nike">Nike</option>
+                    <option value="adidas">Adidas</option>
+                    <option value="new-balance">New Balance</option>
+                    <option value="reebok">Reebok</option>
                 </select>
                 
                 <label for="size">Size:</label>
                 <select name="size" id="size">
-                    <option id="size-5" value="5">5</option>
-                    <option id="size-6" value="6">6</option>
-                    <option id="size-7" value="7">7</option>
-                    <option id="size-8" value="8">8</option>
-                    <option id="size-9" value="9">9</option>
-                    <option id="size-10" value="10">10</option>
-                    <option id="size-11" value="11">11</option>
-                    <option id="size-12" value="12">12</option>
+                    <option value="select-size">Select Size</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
                 </select>
                 
                 <label for="gender">Gender:</label>
                 <select name="gender" id="gender">
-                    <option id="gender-male" value="male">Male</option>
-                    <option id="gender-female" value="female">Female</option>
-                    <option id="gender-unisex" value="uni-sex">Unisex</option>
+                    <option value="select-gender">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="uni-sex">Unisex</option>
                 </select>
                     
-                <button type="button" class="btn" id="Submit">
-                    <a href="./listpage.html">Submit</a>
+                <button type="button" class="btn" id="submit">
+                    <a href="listpage.html">Submit</a>
                 </button>
             </form>
+        </form>
         </div>
-        <div id="returned-search">
-
-        </div>
-    </section>
-
-    <!-- "about us" section -->
-    <section id="about-us" class="intro">
-        <h2> About Us </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet atque consequatur sit dolores nostrum ad, labore recusandae doloremque soluta perspiciatis accusantium quos aliquam ea eaque commodi obcaecati ex repellendus. Doloribus!
-            </p>
     </section>
 
     <!-- "how it works" section -->
@@ -100,12 +95,48 @@
             </p>
     </section>
 
-    <!-- "contact us" section -->
-    <section id="contact-us" class="contact">
-        <h2> Contact Us </h2>
-            <p> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident iste ea ut aut, odio repudiandae recusandae quidem corporis quibusdam eligendi aspernatur nesciunt magnam dolore ipsum unde necessitatibus, omnis harum.
+    <!-- "about us" section -->
+    <section id="about-us" class="intro">
+        <h2> About Us </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet atque consequatur sit dolores nostrum ad, labore recusandae doloremque soluta perspiciatis accusantium quos aliquam ea eaque commodi obcaecati ex repellendus. Doloribus!
             </p>
+    </section>
+
+    
+
+
+     <!-- "contact us" section -->
+     <section id= "contact-us" class= "contact">
+        <div class= "flex-row">
+            <h2 class= "section-title secondary-border"> Contact Us </h2>
+        </div>
+
+        <div class= "contact-info">
+            <div>
+            
+            <address>
+                55 Main Street <br/>
+                Memphis, TN <br/>
+                38119 <br/>
+                P: 901.786.2839<br/>
+                E: <a href="mailto:info@sneakpeek.io">info@sneakpeek.io</a>
+            </address>
+        </div>
+
+        <div class="contact-form">
+            <h3> </h3>
+        
+            <form>
+                <label for="contact-name"> Your Name </label>
+                <input type="text" id="contact-name" placeholder= "Your Name">
+                <label for="contact-message"> Message </label>
+                <textarea id= "contact-message" placeholder= "Message"></textarea>
+                <button type="submit"> Submit </button>
+            </form>
+        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208837.86597254392!2d-90.11087018004424!3d35.1293862128148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d57e1eea439745%3A0xd193f315601ab6fe!2sMemphis%2C%20TN!5e0!3m2!1sen!2sus!4v1632503539897!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </section>
 
     <footer>
@@ -115,6 +146,52 @@
             &copy; 2021 Sneak Peak, Inc.
         </div>
     </footer>
-</body>
 
+    
+</body>
+<script src="./assets/js/script.js">
+        // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '390',
+    width: '640',
+    videoId: 'M7lc1UVf-VE',
+    playerVars: {
+      'playsinline': 1
+    },
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  event.target.playVideo();
+}
+
+// 5. The API calls this function when the player's state changes.
+//    The function indicates that when playing a video (state=1),
+//    the player should play for six seconds and then stop.
+var done = false;
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.PLAYING && !done) {
+    setTimeout(stopVideo, 6000);
+    done = true;
+  }
+}
+function stopVideo() {
+  player.stopVideo();
+}
+</script>
 </html>
