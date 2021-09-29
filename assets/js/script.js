@@ -10,6 +10,7 @@ submitButtonEl.addEventListener("click", shoeSearch);
 //Function to search based on user paramaters
 function shoeSearch() {
 //Variable to store size, brand, gender
+localStorage.clear;
 var resultsValueEl = [];
 //Fetching user size selection from search form
 var sizeValue = document.getElementById("user-search").elements[0].value;
@@ -21,8 +22,6 @@ var genderValue = document.getElementById("user-search").elements[2].value;
 resultsValueEl.push(sizeValue, brandValue, genderValue);
 //Pushing resultsValeEl to local storage
 localStorage.setItem("results", resultsValueEl);
-
-console.log(resultsValueEl);
 };
 
 
