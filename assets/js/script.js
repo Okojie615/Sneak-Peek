@@ -4,8 +4,7 @@ const valueBrandEl = document.getElementById('brand');
 const valueGenderEl = document.getElementById('gender');
 
 
-submitButtonEl.addEventListener("click", shoeSearch);
-
+submitButtonEl.addEventListener("click", function() {
 
 //Function to search based on user paramaters
 function shoeSearch() {
@@ -18,23 +17,37 @@ var sizeValue = document.getElementById("user-search").elements[0].value;
 var brandValue = document.getElementById("user-search").elements[1].value;
 //Fetching user gender selection from search form
 var genderValue = document.getElementById("user-search").elements[2].value;
+
+if (valueBrandEl.value = 'none') {
+    window.prompt("Please select a brand")
+}
+
+if (valueSizeEl.value = 'none') {
+    window.prompt("Please select a size")
+}
+
+if (valueGenderEl.value = 'none') {
+    window.prompt("Please select a gender")
+}
+
+else {
 //Declaring resultsValueEl as user selected values
 resultsValueEl.push(sizeValue, brandValue, genderValue);
 //Pushing resultsValeEl to local storage
-localStorage.setItem("results", resultsValueEl);
+localStorage.setItem("results", resultsValueEl);}
 };
 
 
+// function userSelection () {
+//     if (valueBrandEl.value = 'none') {
+//         window.prompt("Please select a brand")
+//     }
 
+//     if (valueSizeEl.value = 'none') {
+//         window.prompt("Please select a size")
+//     }
 
-
-
-
-
-
-
-
-
-
-
-
+//     if (valueGenderEl.value = 'none') {
+//         window.prompt("Please select a gender")
+//     }
+// };
