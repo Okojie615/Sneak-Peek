@@ -2,6 +2,7 @@
     --primary-color: rgb(189, 189, 189);
     --secondary-color: black;
     --tertiary-color: rgb(255, 0, 0);
+    --quaternary-color: rgba(174, 174, 174, 1);
 }
 
 * {
@@ -61,20 +62,8 @@ header nav ul li a:hover {
 }
 
 header h1 img {
-    height: 90px;
-    width: 90px;
-}
-
-#filter-column {
-    text-align: center;
-    margin: 20px 20px 20px 50px;
-    padding: 20px 0 0 0;
-    height: 785px;
-    border: 2px solid var(--secondary-color);
-}
-
-#filter-column h2 {
-    text-decoration: underline;
+    height: 95px;
+    width: 95px;
 }
 
 div ul {
@@ -87,11 +76,210 @@ div ul {
     margin: 20px 10px 20px 35px;
     padding: 20px 0 0 0;
     height: 785px;
+    width: 96%;
     border: 2px solid var(--secondary-color);
 }
 
 #results-column h2 {
     text-decoration: underline;
+}
+
+.hero {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+}
+
+
+.hero img {
+    max-width: 100%;
+}
+
+
+.hero-form {
+    border: 3px solid var(--secondary-color);
+    background-color: var(--quaternary-color);
+    padding: 20px;
+    color: var(--secondary-color);
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 150px;
+    right: 50px; 
+
+}
+
+label {
+    font-size: 10;
+    margin: 0 5px;
+}
+
+select {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 15px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.hero-form h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.hero-form button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.intro p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 48px;
+    border-bottom: 3px solid;
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.steps p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.steps h2 {
+    font-size: 48px;
+    border-bottom: 3px solid;
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.contact p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 48px;
+    border-bottom: 3px solid;
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.contact {
+    background: var(--secondary-color);
+}
+
+.contact h2 {
+    padding-top: 20px;
+    color: white;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
+.contact-info iframe {
+    height: 300px;
+    margin-left: 300px;
+}
+
+.contact-info div {
+    color: white;
+}
+
+.contact-info h3 {
+    color: white;
+    font-size: 32px;
+}
+
+.contact-info p, 
+.contact-info address {
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: white;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    color: var(--primary-color);
+    background: var(--tertiary-color);
+}
+
+.contact-info a {
+    color: white;
 }
 
 footer {
