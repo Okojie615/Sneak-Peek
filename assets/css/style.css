@@ -197,42 +197,47 @@ select {
 
 .contact {
   background: var(--secondary-color);
-  flex-wrap: wrap;
   display: flexbox;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contact h2 {
-  padding-top: 20px;
   color: white;
-}
-
-.contact-info {
-  display: flex-box;
-  justify-content: space-between;
-  text-align: center;
+  padding: 30px;
 }
 
 .contact-ady {
-  text-align: center;
-  display: flexbox;
+  display: flex-box;
+  justify-content: space-between;
+  padding: 10px 50px;
 }
 
 .contact-info iframe {
   display: flexbox;
-  text-align: center;
-  margin: auto;
-  padding: 20px;
+  padding: 10px 60px;
 }
 
 .contact-info div {
   color: white;
   display: inline-flex;
-  padding: 25px;
+  display: flexbox;
+  justify-content: space-between;
 }
 
 .contact-info h3 {
   color: white;
   font-size: 32px;
+}
+
+.contact-ady {
+  display: inline;
+  margin: 20px;
+}
+
+.contact-form {
+  display: flexbox;
+  padding: 20px;
 }
 
 .contact-info p,
@@ -243,6 +248,7 @@ select {
   font-style: normal;
   display: flex-box;
   text-align: center;
+  padding: 30px 160px;
 }
 
 .contact-form input,
@@ -299,6 +305,25 @@ footer {
   display: inline;
   display: flexbox;
   text-align: center;
+}
+
+.buttoncontact {
+  padding: 10px 30px;
+  background-color: rgb(253, 206, 206);
+  opacity: 50%;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.buttoncontact:hover {
+  transition: 1s;
+  opacity: 100%;
+}
+
+.buttoncontact a {
+  text-decoration: none;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #searc {
