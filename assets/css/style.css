@@ -1,292 +1,384 @@
 :root {
-    --primary-color: rgb(189, 189, 189);
-    --secondary-color: black;
-    --tertiary-color: rgb(255, 0, 0)  ;
+  --primary-color: rgb(189, 189, 189);
+  --secondary-color: black;
+  --tertiary-color: rgb(255, 0, 0);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-   
-    padding: 20px 35px;
-    background-color: var(--tertiary-color);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: sticky;
-    position: -webkit-sticky;
+  padding: 20px 35px;
+  background-color: rgb(248, 190, 190);
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 .sneak-header {
-    color: black;
-    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 50px;
-    color: var(--primary-color);
-    margin: 0;
-    
+  font-weight: bold;
+  font-size: 50px;
+  color: black;
+  margin: 0;
 }
 
 header a {
-    text-decoration: none;
-    color: var(--primary-color);
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
 }
 
 header nav {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
-    
+
+header nav ul li {
+  display: flex;
+}
+
 header nav ul li a {
-    padding: 20px 15px;
-    font-weight: lighter;
-    font-size: 1.5vw;
+  padding: 10px 15px;
+  font-size: 1.5vw;
+  display: flex;
+  font-size: 25px;
+  opacity: 80%;
 }
 
 header nav ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 15px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
 }
 
 .hero {
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
 }
-
 
 .hero img {
-    max-width: 100%;
+  max-width: 100%;
+  position: fixed;
+  display: flex;
 }
 
-
 .hero-form {
-    border: 3px solid var(--secondary-color);
-    background-color: rgb(191, 224, 182);
-    padding: 20px;
-    color: var(--secondary-color);
-    width: 30%;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 150px;
-    right: 50px; 
-
+  background-color: rgba(192, 192, 192, 0.3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 25px;
+  color: var(--secondary-color);
+  width: 30%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  display: flexbox;
+  flex-wrap: wrap;
 }
 
 label {
-    font-size: 10;
-    margin: 0 5px;
+  font-size: 10;
+  margin: 0 5px;
 }
 
 select {
-    border: 1px solid var(--secondary-color);
-    display: block;
-    padding: 7px 15px;
-    font-size: 15px;
-    color: var(--secondary-color);
-    width: 100%;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid var(--secondary-color);
+  display: block;
+  padding: 7px 15px;
+  font-size: 15px;
+  color: var(--secondary-color);
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .hero-form h3 {
-    font-size: 25px;
-    margin: 0;
+  font-size: 25px;
+  margin: 0;
 }
 
 .hero-form button {
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
 }
 
 .intro p {
-    line-height: 1.7;
-    color: var(--tertiary-color);
-    width: 80%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
+  line-height: 1.7;
+  color: var(--tertiary-color);
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.imgcenter {
+  text-align: center;
+  width: 100%;
 }
 
 .intro h2 {
-    font-size: 48px;
-    border-bottom: 3px solid;
-    color: var(--secondary-color);
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: var(--secondary-color);
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.buy-logo {
+  height: 75px;
+  width: 150;
+  padding: 15px 5px 15px 30px;
+  border-bottom: 5px;
+  border-color: black;
+}
+
+#stockx, #flight-club, #goat, #stadium-goods {
+  padding: 15px 5px 15px 30px;
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 .steps p {
-    line-height: 1.7;
-    color: var(--tertiary-color);
-    width: 80%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
+  line-height: 1.7;
+  color: var(--tertiary-color);
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
 }
 
 .steps h2 {
-    font-size: 48px;
-    border-bottom: 3px solid;
-    color: var(--secondary-color);
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: var(--secondary-color);
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+#results {
+  text-align: center;
+  margin: 20px 10px 20px 35px;
+  padding: 20px 0 0 0;
+  height:fit-content;
+  border: 2px solid var(--secondary-color);
+  overflow-x: hidden;
+  overflow-y:scroll;
+  text-decoration: underline;
 }
 
 .contact p {
-    line-height: 1.7;
-    color: var(--tertiary-color);
-    width: 80%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
+  line-height: 1.7;
+  color: var(--tertiary-color);
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
 }
 
 .contact h2 {
-    font-size: 48px;
-    border-bottom: 3px solid;
-    color: var(--secondary-color);
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
+  font-size: 48px;
+  border-bottom: 1px solid;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 25px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 90%;
 }
-
 
 /* REACH OUT STYLES START */
 
-
 .contact {
-    background: var(--secondary-color);
+  background: var(--secondary-color);
+  display: flexbox;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contact h2 {
-    padding-top: 20px;
-    color: white;
+  color: white;
+  padding: 30px;
 }
 
-.contact-info {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact-info > * {
-    flex: 1;
-    margin: 15px;
+.contact-ady {
+  display: flex-box;
+  justify-content: space-between;
+  padding: 10px 50px;
 }
 
 .contact-info iframe {
-    height: 300px;
-    margin-left: 300px;
+  display: flexbox;
+  padding: 10px 60px;
 }
 
 .contact-info div {
-    color: white;
+  color: white;
+  display: inline-flex;
+  display: flexbox;
+  justify-content: space-between;
 }
 
 .contact-info h3 {
-    color: white;
-    font-size: 32px;
+  color: white;
+  font-size: 32px;
 }
 
-.contact-info p, 
+.contact-ady {
+  display: inline;
+  margin: 20px;
+}
+
+.contact-form {
+  display: flexbox;
+  padding: 20px;
+}
+
+.contact-info p,
 .contact-info address {
-    margin: 10px;
-    line-height: 1.5;
-    font-size: 20px;
-    font-style: normal;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+  display: flex-box;
+  text-align: center;
+  padding: 30px 160px;
 }
 
-.contact-form input, .contact-form textarea {
-    border: 1px solid var(--secondary-color);
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: var(--secondary-color);
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.75);
+.contact-form input,
+.contact-form textarea {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid var(--secondary-color);
+  display: flex-box;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--secondary-color);
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255, 255, 255, 1);
-    outline: none;
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .contact-form button {
-    width: 100%;
-    border: none;
-    background: white;
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-    border-radius: 10px;
+  width: 100%;
+  border: none;
+  background: white;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-form button:hover {
-    color: var(--primary-color);
-    background: var(--tertiary-color);
+  color: var(--primary-color);
+  transition: 0.5s;
+  background-color: rgb(255, 228, 224);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-info a {
-    color: white;
+  color: white;
+  display: flex-box;
+}
+
+.contact-message {
+  display: flexbox;
+  text-align: center;
 }
 
 /*REACH OUT STYLES END */
 
 footer {
-    background: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
+  display: inline;
+  display: flexbox;
+  text-align: center;
 }
 
-footer h2 {
-    color: var(--secondary-color);
-    font-size: 25px;
-    margin: 0;
-    padding: 10px;
+.buttoncontact {
+  padding: 10px 30px;
+  background-color: rgb(253, 206, 206);
+  opacity: 50%;
+  border-radius: 15px;
+  margin: 10px;
 }
 
-footer div {
-    line-height: 1.5;
-    text-align: right;
-    padding-right: 15px;
+.buttoncontact:hover {
+  transition: 1s;
+  opacity: 100%;
 }
 
-footer a {
-    color: var(--secondary-color);
+.buttoncontact a {
+  text-decoration: none;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#searc {
+  border: 1px solid var(--secondary-color);
+  display: block;
+  padding: 7px 15px;
+  font-size: 15px;
+  color: var(--secondary-color);
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+#formtext {
+  text-align: center;
+  padding: 20px;
+  font-weight: normal;
+}
+
+#formsubmit {
+  text-align: center;
+}
+
+#formsubmit:hover {
+  background-color: rgb(238, 204, 204);
+  transition: 1s;
+  transform: translateY(10px);
+}
+
+#contactss {
+  display: flexbox;
 }
