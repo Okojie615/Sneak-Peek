@@ -41,7 +41,8 @@ header a {
 }
 
 header nav {
-  margin: 10px 10pz;
+  margin: 0px 20px;
+  display: flexbox;
 }
 header nav ul {
   display: flex;
@@ -81,6 +82,7 @@ header nav ul li a:hover {
   background-color: rgba(192, 192, 192, 0.733);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 25px;
+  display: flexbox;
   color: var(--secondary-color);
   width: 30%;
   border-radius: 15px;
