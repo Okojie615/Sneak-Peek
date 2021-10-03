@@ -10,9 +10,8 @@
 
 <body>
     <header>
-        <div class="strokeme">
             <h1>
-                <a href="/">SNEAK PEEK</a>
+                Sneak Peek <img src="./assets/images/SneakPeekLogo.png" />
             </h1>
         </div>
 
@@ -22,9 +21,6 @@
             <!-- List item element-->
             <li>
             <!-- Anchor element -->
-            <li>
-                <a href="#how-it-works">How it works</a>
-            </li>
             <li>
             <a href="#about-us">About Us</a>
             </li>
@@ -36,60 +32,16 @@
     </header>
 
     <!-- hero/jumbotron -->
+
+    
     <section class= "hero">
-        <h2> </h2>
+        <script src= "./assets/css/js/script.js"></script>
         <div id="player"></div>
-        <script src="./assets/css/js/script.js">
-        // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// 3. This function creates an <iframe> (and YouTube player)
-//    after the API code downloads.
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    height: '390',
-    width: '640',
-    videoId: 'M7lc1UVf-VE',
-    playerVars: {
-      'playsinline': 1
-    },
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });
-}
-
-// 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-  event.target.playVideo();
-}
-
-// 5. The API calls this function when the player's state changes.
-//    The function indicates that when playing a video (state=1),
-//    the player should play for six seconds and then stop.
-var done = false;
-function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.PLAYING && !done) {
-    setTimeout(stopVideo, 6000);
-    done = true;
-  }
-}
-function stopVideo() {
-  player.stopVideo();
-}
-</script>
-        <img src= "assets\css\images\hermes-rivera-w83s82yd3Fk-unsplash (1).jpg" />
         
         <div class="hero-form">
             <h3>Start Styling!</h3>
 
-            <!-- Add form element -->
+      
             <form action="/" method="GET">
             <form>
                     
@@ -101,20 +53,7 @@ function stopVideo() {
                     <option value="new-balance">New Balance</option>
                     <option value="reebok">Reebok</option>
                 </select>
-                
-                <label for="size">Size:</label>
-                <select name="size" id="size">
-                    <option value="select-size">Select Size</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select>
-                
+                 
                 <label for="gender">Gender:</label>
                 <select name="gender" id="gender">
                     <option value="select-gender">Select Gender</option>
@@ -131,13 +70,6 @@ function stopVideo() {
         </div>
     </section>
 
-    <!-- "how it works" section -->
-    <section id= "how-it-works" class="steps">
-        <h2> How It Works </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam asperiores, ipsa perspiciatis labore veritatis necessitatibus et facere incidunt ut doloremque facilis corrupti ipsam recusandae reiciendis, culpa reprehenderit omnis earum atque.
-            </p>
-    </section>
 
     <!-- "about us" section -->
     <section id="about-us" class="intro">
@@ -146,8 +78,6 @@ function stopVideo() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet atque consequatur sit dolores nostrum ad, labore recusandae doloremque soluta perspiciatis accusantium quos aliquam ea eaque commodi obcaecati ex repellendus. Doloribus!
             </p>
     </section>
-
-    
 
 
      <!-- "contact us" section -->
@@ -191,6 +121,6 @@ function stopVideo() {
         </div>
     </footer>
 
-    
+
 </body>
 </html>

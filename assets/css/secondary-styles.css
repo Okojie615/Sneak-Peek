@@ -1,10 +1,28 @@
+:root {
+    --primary-color: rgb(189, 189, 189);
+    --secondary-color: black;
+    --tertiary-color: rgb(255, 0, 0);
+    --quaternary-color: rgba(174, 174, 174, 1);
+}
+
 .hero {
     background-position: bottom;
     height: auto;
     text-align: center;
     margin-bottom: 40px;
   }
-  
+
+  h1 {
+    background-color: var(--tertiary-color);
+    padding: 25px;
+  }
+
+  h1 a {
+    color: black;
+  }
+
+
+ 
   .page-title {
     color: black;
     display: inline-block;

@@ -1,7 +1,8 @@
 :root {
     --primary-color: rgb(189, 189, 189);
     --secondary-color: black;
-    --tertiary-color: rgb(255, 0, 0)  ;
+    --tertiary-color: rgb(255, 0, 0);
+    --quaternary-color: rgba(174, 174, 174, 1);
 }
 
 * {
@@ -11,55 +12,57 @@
 }
 
 header {
-   
-    padding: 20px 35px;
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
-}
-
-.strokeme {
-    color: black;
-    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+    background-image: url();
+    background-size: cover;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 50px;
-    color: var(--primary-color);
-    margin: 0;
-    
-}
-
-header a {
-    text-decoration: none;
-    color: var(--primary-color);
+    font-size: 45px;
+    color: var(--secondary-color);
+    padding-left: 25px;
 }
 
 header nav {
-    margin: 10px 0;
+    margin: 7px 0;
 }
+
 header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
+    align-items: center;
 }
     
 header nav ul li a {
     padding: 20px 15px;
-    font-weight: lighter;
-    font-size: 1.5vw;
+    font-weight: bold;
+    font-size: 1.55vw;
+    color: var(--secondary-color);
+    text-decoration-line: none;
 }
 
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
+}
+
+header h1 img {
+    height: 95px;
+    width: 95px;
+}
+
+div ul {
+    list-style-type: none;
+    text-align: left;
 }
 
 .hero {
@@ -79,15 +82,15 @@ header nav ul li a:hover {
 
 .hero-form {
     border: 3px solid var(--secondary-color);
-    background-color: rgb(191, 224, 182);
+    background-color: lightgray;
     padding: 20px;
     color: var(--secondary-color);
-    width: 30%;
+    width: 25%;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 150px;
-    right: 50px; 
+    top: 250px;
+    right: 60px; 
 
 }
 
