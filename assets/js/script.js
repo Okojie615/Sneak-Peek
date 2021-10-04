@@ -3,11 +3,7 @@ const submitButtonEl = document.getElementById("submit");
 const valueBrandEl = document.getElementById('brand');
 const valueGenderEl = document.getElementById('gender');
 const valueLimitEl = document.getElementById('limit');
-<<<<<<< HEAD
-const resultsDisplayEl = document.getElementById("results");
-=======
 const resultsDisplayEl = document.getElementById('results');
->>>>>>> b42d3a1958d0d217d3185ca503f615382ddf5d55
 const userSearchEl = document.getElementById("user-search");
 
 submitButtonEl.addEventListener("click", shoeSearch);
@@ -122,9 +118,5 @@ function shoeSearch() {
             
         }
 	})
-<<<<<<< HEAD
-};
-=======
 };
 
->>>>>>> b42d3a1958d0d217d3185ca503f615382ddf5d55
