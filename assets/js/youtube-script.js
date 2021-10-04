@@ -18,7 +18,7 @@
         'controls': 0,
         'loop': 1,
         'start': 3,
-        'end': 9,
+        'end': 93,
         'mute': 1,      
       },
       events: {
