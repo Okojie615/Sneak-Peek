@@ -13,7 +13,11 @@ Sneak Peek is a website for fashion enthusiasts and sneakerheads to find their n
 * The YouTube API
 
 ## Screenshots
+![Landing Page](/assets/images/SPScreenshot1.jpg)
 
+![Results](/assets/images/SPScreenshot2.jpg)
+
+![Contact](/assets/images/SPScreenshot3.jpg)
 
 ## Deployed Application
 https://okojie615.github.io/Sneak-Peek/
