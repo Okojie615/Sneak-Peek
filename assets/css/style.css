@@ -155,6 +155,43 @@ select {
   width: 50%;
 }
 
+.buy-logo {
+  height: 75px;
+  width: 150;
+  padding: 15px 5px 15px 30px;
+  border-bottom: 5px;
+  border-color: black;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  opacity: 50%;
+  background-color: black;
+}
+
+.btnsub {
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover {
+  transition: 1s;
+  color: rgb(247, 197, 197);
+  background-color:rgb(235, 170, 170);
+  opacity: 100%;
+}
+
+#stockx,
+#flight-club,
+#goat,
+#stadium-goods {
+  padding: 15px 5px 15px 30px;
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
 .steps p {
   line-height: 1.7;
   color: var(--tertiary-color);
@@ -172,6 +209,28 @@ select {
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
+}
+#results {
+  text-align: center;
+  margin: 20px 20px 20px 35px;
+  padding: 20px 0 0 0;
+  height: fit-content;
+  border: 2px solid var(--secondary-color);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-decoration: underline;
+}
+
+.resultsmain {
+  border: 3px solid rgb(235, 170, 170);
+}
+
+.resultstext {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  padding: 30px;
+  background-color: rgba(192, 192, 192, 0.2);
 }
 
 .contact p {
@@ -324,6 +383,15 @@ footer {
   text-decoration: none;
   color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#player {
+  text-decoration: none;
+  display: block;
+  width: 2000px;
+  height: 1100px;
+  opacity: 80%;
+  image-resolution: 20%;
 }
 
 #searc {
