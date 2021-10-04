@@ -11,12 +11,20 @@
     player = new YT.Player('player', {
       height: '700',
       width: '100%',
+<<<<<<< HEAD
       videoId: '3Lf3bbYcNd4',
       playerVars: {
         'playlist': '3Lf3bbYcNd4',
         'autoplay': 1,
         'controls': 0,
         'showinfo': 0,
+=======
+      videoId: 'LYgcQcH6_TQ',
+      playerVars: {
+        'playlist': 'LYgcQcH6_TQ',
+        'autoplay': 1,
+        'controls': 0,
+>>>>>>> b42d3a1958d0d217d3185ca503f615382ddf5d55
         'loop': 1,
         'start': 3,
         'end': 93,

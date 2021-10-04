@@ -163,6 +163,7 @@ select {
   border-color: black;
 }
 
+<<<<<<< HEAD
 .btn {
   text-decoration: none;
   color: white;
@@ -186,6 +187,9 @@ select {
 #flight-club,
 #goat,
 #stadium-goods {
+=======
+#stockx, #flight-club, #goat, #stadium-goods {
+>>>>>>> b42d3a1958d0d217d3185ca503f615382ddf5d55
   padding: 15px 5px 15px 30px;
   font-size: 48px;
   font-weight: bold;
@@ -212,6 +216,7 @@ select {
 }
 #results {
   text-align: center;
+<<<<<<< HEAD
   margin: 20px 20px 20px 35px;
   padding: 20px 0 0 0;
   height: fit-content;
@@ -233,6 +238,17 @@ select {
   background-color: rgba(192, 192, 192, 0.2);
 }
 
+=======
+  margin: 20px 10px 20px 35px;
+  padding: 20px 0 0 0;
+  height:fit-content;
+  border: 2px solid var(--secondary-color);
+  overflow-x: hidden;
+  overflow-y:scroll;
+  text-decoration: underline;
+}
+
+>>>>>>> b42d3a1958d0d217d3185ca503f615382ddf5d55
 .contact p {
   line-height: 1.7;
   color: var(--tertiary-color);
@@ -385,6 +401,7 @@ footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+<<<<<<< HEAD
 #player {
   text-decoration: none;
   display: block;
@@ -394,6 +411,8 @@ footer {
   image-resolution: 20%;
 }
 
+=======
+>>>>>>> b42d3a1958d0d217d3185ca503f615382ddf5d55
 #searc {
   border: 1px solid var(--secondary-color);
   display: block;
