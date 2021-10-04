@@ -18,19 +18,19 @@ header {
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
-    background-image: url();
     background-size: cover;
+    align-items: center;
 }
 
 header h1 {
     font-weight: bold;
     font-size: 45px;
     color: var(--secondary-color);
-    padding-left: 25px;
+
 }
 
 header nav {
-    margin: 7px 0;
+    margin: 0px 0;
 }
 
 header nav ul {
@@ -42,7 +42,7 @@ header nav ul {
 }
     
 header nav ul li a {
-    padding: 20px 15px;
+    padding: 25px 15px;
     font-weight: bold;
     font-size: 1.55vw;
     color: var(--secondary-color);
