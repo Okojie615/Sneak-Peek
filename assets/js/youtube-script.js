@@ -11,11 +11,12 @@
     player = new YT.Player('player', {
       height: '700',
       width: '100%',
-      videoId: 'LYgcQcH6_TQ',
+      videoId: '3Lf3bbYcNd4',
       playerVars: {
-        'playlist': 'LYgcQcH6_TQ',
+        'playlist': '3Lf3bbYcNd4',
         'autoplay': 1,
         'controls': 0,
+        'showinfo': 0,
         'loop': 1,
         'start': 3,
         'end': 93,

@@ -23,17 +23,19 @@ function shoeSearch() {
 	console.log(localSearch);
 
 //Function to get api data and return info to HTML for display
-	const settings = {
-		"async": true,
-		"crossDomain": true,
-		"url": "https://the-sneaker-database.p.rapidapi.com/sneakers?limit=100",
-		"method": "GET",
-		"headers": {
-			"x-rapidapi-host": "the-sneaker-database.p.rapidapi.com",
-			"x-rapidapi-key": "f78221ab2dmshec5f3dfe2c6de16p1ed0adjsn028016d937b2"
-		}
-	};
-	$.ajax(settings).done(function (response) {
+const settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://the-sneaker-database.p.rapidapi.com/sneakers?limit=100",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "the-sneaker-database.p.rapidapi.com",
+		"x-rapidapi-key": "9e4a256408msha93f5ef08977be7p1f6b06jsn5b5f47e65060"
+	}
+};
+
+$.ajax(settings).done(function (response) {
+	
         resultsReturned = response.results;
         console.log(resultsReturned);
 		for (var i = 0; i < valueLimitEl.value; i++) {
