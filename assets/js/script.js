@@ -38,7 +38,7 @@ $.ajax(settings).done(function (response) {
 	
         resultsReturned = response.results;
         console.log(resultsReturned);
-		for (var i = 0; i < valueLimitEl.value; i++) {
+		for (var i = 0; i < 100; i++) {
 			if (resultsReturned[i].gender == valueGenderEl.value) {
                 //Create div to store all shoe info
 				var shoeResults = document.createElement("div");
